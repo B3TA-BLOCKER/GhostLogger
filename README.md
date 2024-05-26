@@ -1,4 +1,5 @@
-# GhostLogger
+# <div align="center"><strong>GhostLogger</strong></div>
+
 
 GhostLogger is a sophisticated and stealthy keylogger designed for educational purposes and to showcase advanced programming techniques in C++. 
 
@@ -9,7 +10,7 @@ GhostLogger is a sophisticated and stealthy keylogger designed for educational p
 - **Customizable Hotkeys**: Allows user-defined hotkeys for controlling the logger.
 - **Cross-Platform Compatibility**: Works on multiple operating systems.
 
-## Installation
+    ## Installation
 1. Clone the repository:
     ```sh
     git clone https://github.com/yourusername/GhostLogger.git
