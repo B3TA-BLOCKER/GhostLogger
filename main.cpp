@@ -7,7 +7,17 @@ int main(void) {
     char character;
 
     for (;;) {
-        for (character = 8; character <= 222; character++) {
+        for (character = 8; character <= 222; character++){
+            /*
+                 The range 8 to 222 covers a wide range of keys including:
+
+                   - Numeric keys (0-9)
+                   - Alphabet keys (A-Z)
+                   - Function keys (F1-F12)
+                   - Control keys (Shift, Ctrl, Alt, etc.)
+                   - Punctuation keys and other special characters.
+ 
+            */
             /*
                 When a key is pressed there is a system interrupt 
                 That interrupt can represent the number 
