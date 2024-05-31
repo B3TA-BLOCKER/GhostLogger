@@ -1,0 +1,4 @@
+ <Enter> 
+this is goog  <Backspace>  <Backspace> d  <Enter> 
+this is goodd <Enter> 
+this ias good

