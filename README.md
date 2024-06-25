@@ -1,6 +1,12 @@
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<div align="center">
+
 # GhostLogger 👻🖥️
 
-Welcome to **GhostLogger**, a stealthy and efficient keylogging application for Windows! Designed for educational purposes and to demonstrate low-level Windows programming techniques, GhostLogger captures and records keystrokes in a hidden manner.
+**Welcome to **GhostLogger**, a stealthy and efficient keylogging application for Windows! Designed for educational purposes and to demonstrate low-level Windows programming techniques, GhostLogger captures and records keystrokes in a hidden manner.**
+
+</div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -28,7 +34,7 @@ GhostLogger
 ## How It Works 🛠️
 The main functionality is encapsulated in `main.cpp`, which includes the following key components:
 - **KeyLogger**: A function that captures keystrokes using `GetAsyncKeyState` and writes them to `Record.txt`.
-- **hide_exe**: A function that hides the console window to ensure the program runs invisibly.
+- **hide_exe**: A function that hides the console window to ensure the program runs `invisibly`.
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -149,32 +155,8 @@ To run GhostLogger on your machine, follow these steps for different operating s
    - Use the build and run options within Visual Studio.
 
 ### macOS and Linux
-**This project relies on Windows-specific APIs and functions, making it incompatible with macOS and Linux out of the box.** However, you can still compile and run other C++ projects by following these steps:
-
-1. **Clone the Repository**:
-   ```sh
-   git clone https://github.com/B3TA-BLOCKER/GhostLogger.git
-   ```
-
-2. **Open and Edit the Code**:
-   - Use any text editor of your choice (e.g., Sublime Text, Atom, Visual Studio Code, or even Vim).
-
-3. **Compile and Run**:
-   - Ensure you have a C++ compiler installed. You can use `g++` on both macOS and Linux.
-
-#### Using GCC:
-
-1. **Compile the Code**:
-   ```sh
-   g++ src/main.cpp -o main
-   ```
-
-2. **Run the Program**:
-   ```sh
-   ./main
-   ```
-
-**Note: As GhostLogger uses Windows-specific functions like `GetAsyncKeyState`, `AllocConsole`, and `FindWindowA`, it won't compile or run on macOS and Linux without significant modifications. The instructions above are for general C++ projects.**
+**This project relies on `Windows-specific APIs` and functions, making it `incompatible` with macOS and Linux out of the box.** 
+**As GhostLogger uses Windows-specific functions like `GetAsyncKeyState`, `AllocConsole`, and `FindWindowA`, it won't compile or run on macOS and Linux without significant modifications. The instructions above are for general C++ projects.**
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
