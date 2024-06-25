@@ -2,10 +2,14 @@
 
 Welcome to **GhostLogger**, a stealthy and efficient keylogging application for Windows! Designed for educational purposes and to demonstrate low-level Windows programming techniques, GhostLogger captures and records keystrokes in a hidden manner.
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ## Features 🌟
 - **Stealth Mode**: Runs invisibly in the background.
 - **Comprehensive Key Logging**: Captures a wide range of keys, including alphabetic characters, numeric keys, function keys, control keys, and special characters.
 - **Log File**: Records all keystrokes in `Record.txt`.
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## Project Structure 📁
 ```
@@ -19,10 +23,14 @@ GhostLogger
     └───Record.txt
 ```
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ## How It Works 🛠️
 The main functionality is encapsulated in `main.cpp`, which includes the following key components:
 - **KeyLogger**: A function that captures keystrokes using `GetAsyncKeyState` and writes them to `Record.txt`.
 - **hide_exe**: A function that hides the console window to ensure the program runs invisibly.
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ### Code Overview 👨‍💻
 Here's a brief look at the core code in `main.cpp`:
@@ -98,38 +106,106 @@ void hide_exe()
 }
 ```
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ## Getting Started 🚀
-To run GhostLogger on your machine, follow these steps:
+To run GhostLogger on your machine, follow these steps for different operating systems:
+
+### Windows
+1. **Clone the Repository**:
+   ```sh
+   git clone https://github.com/B3TA-BLOCKER/GhostLogger.git
+   ```
+
+2. **Open and Edit the Code**:
+   - Use any text editor of your choice (e.g., Notepad++, Sublime Text, Atom, or even Notepad).
+
+3. **Compile and Run**:
+   - Ensure you have a C++ compiler installed. You can use any of the following methods:
+
+#### Using GCC (MinGW):
+
+1. **Install MinGW**: Download and install MinGW from [MinGW website](http://www.mingw.org/).
+
+2. **Compile the Code**:
+   ```sh
+   g++ src/main.cpp -o main
+   ```
+
+3. **Run the Program**:
+   ```sh
+   ./main
+   ```
+
+#### Using Visual Studio:
+
+1. **Install Visual Studio**: Download and install Visual Studio from [Visual Studio website](https://visualstudio.microsoft.com/).
+
+2. **Open the Project**:
+   - Create a new project or open an existing one.
+   - Add `main.cpp` to the project.
+
+3. **Compile and Run**:
+   - Use the build and run options within Visual Studio.
+
+### macOS and Linux
+**This project relies on Windows-specific APIs and functions, making it incompatible with macOS and Linux out of the box.** However, you can still compile and run other C++ projects by following these steps:
 
 1. **Clone the Repository**:
    ```sh
-   git clone https://github.com/yourusername/GhostLogger.git
+   git clone https://github.com/B3TA-BLOCKER/GhostLogger.git
    ```
-2. **Open in VSCode**:
+
+2. **Open and Edit the Code**:
+   - Use any text editor of your choice (e.g., Sublime Text, Atom, Visual Studio Code, or even Vim).
+
+3. **Compile and Run**:
+   - Ensure you have a C++ compiler installed. You can use `g++` on both macOS and Linux.
+
+#### Using GCC:
+
+1. **Compile the Code**:
    ```sh
-   code GhostLogger
+   g++ src/main.cpp -o main
    ```
-3. **Build and Run**:
-   - Make sure you have a C++ compiler installed.
-   - Compile and run `main.cpp` using your preferred method or directly through VSCode's built-in tasks.
+
+2. **Run the Program**:
+   ```sh
+   ./main
+   ```
+
+**Note: As GhostLogger uses Windows-specific functions like `GetAsyncKeyState`, `AllocConsole`, and `FindWindowA`, it won't compile or run on macOS and Linux without significant modifications. The instructions above are for general C++ projects.**
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## Usage ⚙️
 - Once the program is running, it will operate in the background, logging all keystrokes to `Record.txt`.
 - To stop the program, you will need to end the process through Task Manager or by terminating it via your development environment.
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ## Legal Disclaimer ⚖️
 This project is intended for educational purposes only. Unauthorized use of keylogging software is illegal and unethical. Always ensure you have explicit permission before using this software on any device.
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## Connect with Me 🌐
 I'm always looking to expand my professional network and explore new opportunities. Let's connect!
 - [LinkedIn](https://www.linkedin.com/in/hassaan-ali-bukhari/)
 - [Email](mailto:hassaanalibukhari@gmail.com)
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ## License 📜
 This project is licensed under the Creative Commons Zero v1.0 Universal License. See the [LICENSE](LICENSE) file for details.
 
----
+<br>
 
-Made with ❤️ by [Your Name](https://github.com/yourusername)
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-Happy Coding! 🎉
+Made by [Hassaan Ali Bukhari](https://github.com/B3TA-BLOCKER)
+<br>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=DotGothic16&size=41&width=800&height=60&lines=Happy+coding!+🚀&center=true&vCenter=true)](https://git.io/typing-svg)
