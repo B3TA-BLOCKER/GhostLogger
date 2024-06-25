@@ -1,3 +1,5 @@
+Given the nature of the project, it's important to choose a license that reflects the educational intent and discourages misuse. A more restrictive license like the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** might be more appropriate. Here’s an updated README.md with this license:
+
 # GhostLogger 👻🖥️
 
 Welcome to **GhostLogger**, a stealthy and efficient keylogging application for Windows! Designed for educational purposes and to demonstrate low-level Windows programming techniques, GhostLogger captures and records keystrokes in a hidden manner.
@@ -127,7 +129,7 @@ I'm always looking to expand my professional network and explore new opportuniti
 - [Email](mailto:youremail@example.com)
 
 ## License 📜
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
