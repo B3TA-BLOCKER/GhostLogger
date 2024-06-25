@@ -122,12 +122,11 @@ This project is intended for educational purposes only. Unauthorized use of keyl
 
 ## Connect with Me 🌐
 I'm always looking to expand my professional network and explore new opportunities. Let's connect!
-- [LinkedIn](https://www.linkedin.com/in/yourprofile)
-- [Twitter](https://twitter.com/yourhandle)
-- [Email](mailto:youremail@example.com)
+- [LinkedIn](https://www.linkedin.com/in/hassaan-ali-bukhari/)
+- [Email](mailto:hassaanalibukhari@gmail.com)
 
 ## License 📜
-This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the Creative Commons Zero v1.0 Universal License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
