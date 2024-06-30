@@ -187,7 +187,3 @@ This project is licensed under the Creative Commons Zero v1.0 Universal License.
 
 Made by [Hassaan Ali Bukhari](https://github.com/B3TA-BLOCKER)
 <br>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=DotGothic16&size=41&width=800&height=60&lines=Happy+coding!+🚀&center=true&vCenter=true)](https://git.io/typing-svg)
